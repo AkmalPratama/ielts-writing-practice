@@ -124,7 +124,9 @@ The editable nine-slide deck is committed in [`artifacts/ielts-project-overview`
 
 It covers the product, practice coverage, learner workflow, writing workspace, AI feedback, scoring limits, privacy, AI cost safeguards, and publishing readiness.
 
-In the running workspace or published application, open `/ielts-project-overview/`. The deck uses the app's visual style and screenshots. No PowerPoint or PDF export is included.
+In the running workspace or published application, open `/ielts-project-overview/`. The deck uses the app's visual style and screenshots.
+
+Download the [nine-slide PDF overview](docs/ielts-writing-project-overview.pdf). The editable source remains in the slides directory; no PowerPoint export is included.
 
 ## Repository layout
 
