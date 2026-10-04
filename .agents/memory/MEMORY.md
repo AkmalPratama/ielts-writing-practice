@@ -1,0 +1,3 @@
+- [Generated client DOM types](generated-client-dom-types.md) — modern Orval fetch output needs iterable DOM definitions in the client library.
+- [Low-cost IELTS generation](low-cost-ielts-generation.md) — constrain cheap-model outputs by task type; generic nullable visual schemas produced incomplete exercises.
+- [IELTS scoring validation](ielts-scoring-validation.md) — distinguish published overall bands from analyst criterion judgments; paid benchmarks share the approved cap.

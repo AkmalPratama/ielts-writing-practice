@@ -1,0 +1,229 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+paths:
+  /writing/tasks:
+    get:
+      operationId: getPracticeTasks
+      responses:
+        "200":
+          description: Curated and previously generated practice tasks; listing makes no AI calls
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PracticeTask"
+        "503":
+          description: Generated-task database unavailable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /writing/ai-status:
+    get:
+      operationId: getAiStatus
+      responses:
+        "200":
+          description: AI cost and setup status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AiStatus"
+  /writing/generate:
+    post:
+      operationId: generateWritingTask
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TaskInput"
+      responses:
+        "200":
+          description: Generated practice task
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PracticeTask"
+        "400":
+          description: Invalid selection or missing consent
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "429":
+          description: Daily request limit reached
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "502":
+          description: AI provider or validated output failed; no automatic retry
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "503":
+          description: Database unavailable; paid requests blocked
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /writing/feedback:
+    post:
+      operationId: assessWriting
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EssayInput"
+      responses:
+        "200":
+          description: Estimated rubric-based assessment
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WritingFeedback"
+        "400":
+          description: Invalid essay, unavailable task, or missing consent
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "429":
+          description: Daily request limit reached
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "502":
+          description: AI provider or validated output failed; no automatic retry
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "503":
+          description: Database unavailable; paid requests blocked
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+components:
+  schemas:
+    PracticeTask:
+      type: object
+      required: [id, module, task, title, category, prompt, instructions, minWords, minutes, source]
+      properties:
+        id: { type: string }
+        module: { type: string, enum: [academic, general] }
+        task: { type: integer, enum: [1, 2] }
+        title: { type: string }
+        category: { type: string }
+        prompt: { type: string }
+        instructions: { type: string }
+        minWords: { type: integer }
+        minutes: { type: integer }
+        source: { type: string, enum: [sample, ai] }
+        visual:
+          $ref: "#/components/schemas/TaskVisual"
+    TaskVisual:
+      type: object
+      required: [kind, title]
+      properties:
+        kind: { type: string, enum: [chart, table, process, map] }
+        title: { type: string }
+        labels: { type: array, items: { type: string } }
+        series:
+          type: array
+          items:
+            $ref: "#/components/schemas/VisualSeries"
+        steps: { type: array, items: { type: string } }
+        before: { type: array, items: { type: string } }
+        after: { type: array, items: { type: string } }
+    VisualSeries:
+      type: object
+      required: [name, values]
+      properties:
+        name: { type: string }
+        values: { type: array, items: { type: number } }
+    AiStatus:
+      type: object
+      required: [enabled, provider, model, message, costNotice]
+      properties:
+        enabled: { type: boolean }
+        provider: { type: string }
+        model: { type: string }
+        message: { type: string }
+        costNotice: { type: string }
+    TaskInput:
+      type: object
+      required: [module, task, consent]
+      properties:
+        module: { type: string, enum: [academic, general] }
+        task: { type: integer, enum: [1, 2] }
+        consent: { type: boolean }
+    EssayInput:
+      type: object
+      required: [taskId, essay, consent]
+      properties:
+        taskId: { type: string, minLength: 1 }
+        essay: { type: string, minLength: 1, maxLength: 20000 }
+        consent: { type: boolean }
+    WritingFeedback:
+      type: object
+      required: [overallBand, summary, criteria, strengths, improvements, sample]
+      properties:
+        overallBand: { type: number, minimum: 0, maximum: 9 }
+        summary: { type: string }
+        sample: { type: boolean }
+        criteria:
+          type: array
+          items:
+            $ref: "#/components/schemas/FeedbackCriterion"
+        strengths: { type: array, items: { type: string } }
+        improvements: { type: array, items: { type: string } }
+    FeedbackCriterion:
+      type: object
+      required: [name, band, explanation, evidence]
+      properties:
+        name: { type: string }
+        band: { type: number, minimum: 0, maximum: 9 }
+        explanation: { type: string }
+        evidence: { type: string }
+    ApiError:
+      type: object
+      required: [error]
+      properties:
+        error: { type: string }
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+

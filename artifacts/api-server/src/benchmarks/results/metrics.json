@@ -1,0 +1,70 @@
+[
+  {
+    "phase": "baseline",
+    "attempts": 6,
+    "failures": 0,
+    "ratedCount": 4,
+    "meanAbsoluteOverallDeviation": 0.875,
+    "meanSignedOverallDeviation": -0.625,
+    "withinHalfBand": 2,
+    "exactQuotations": 14,
+    "totalQuotations": 24,
+    "productionAccepted": 2,
+    "criteria": [
+      {
+        "criterionIndex": 0,
+        "meanCriterionMinusPublishedOverall": -0.375,
+        "meanAbsoluteCommentRangeDistance": 0.25
+      },
+      {
+        "criterionIndex": 1,
+        "meanCriterionMinusPublishedOverall": -0.75,
+        "meanAbsoluteCommentRangeDistance": 0.5
+      },
+      {
+        "criterionIndex": 2,
+        "meanCriterionMinusPublishedOverall": -0.625,
+        "meanAbsoluteCommentRangeDistance": 0.125
+      },
+      {
+        "criterionIndex": 3,
+        "meanCriterionMinusPublishedOverall": -1,
+        "meanAbsoluteCommentRangeDistance": 0.5
+      }
+    ]
+  },
+  {
+    "phase": "revised",
+    "attempts": 6,
+    "failures": 0,
+    "ratedCount": 4,
+    "meanAbsoluteOverallDeviation": 0.625,
+    "meanSignedOverallDeviation": -0.625,
+    "withinHalfBand": 3,
+    "exactQuotations": 22,
+    "totalQuotations": 24,
+    "productionAccepted": 4,
+    "criteria": [
+      {
+        "criterionIndex": 0,
+        "meanCriterionMinusPublishedOverall": -0.625,
+        "meanAbsoluteCommentRangeDistance": 0.375
+      },
+      {
+        "criterionIndex": 1,
+        "meanCriterionMinusPublishedOverall": -0.625,
+        "meanAbsoluteCommentRangeDistance": 0.25
+      },
+      {
+        "criterionIndex": 2,
+        "meanCriterionMinusPublishedOverall": -0.75,
+        "meanAbsoluteCommentRangeDistance": 0.25
+      },
+      {
+        "criterionIndex": 3,
+        "meanCriterionMinusPublishedOverall": -1.125,
+        "meanAbsoluteCommentRangeDistance": 0.375
+      }
+    ]
+  }
+]

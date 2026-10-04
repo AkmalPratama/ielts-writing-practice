@@ -1,0 +1,407 @@
+{
+  "phase": "revised",
+  "model": "gpt-5-nano",
+  "startedAt": "2026-10-03T05:44:56.523Z",
+  "reasoningEffort": "low",
+  "maxCompletionTokens": 8192,
+  "retries": 0,
+  "initialRemaining": 6,
+  "records": [
+    {
+      "id": "academic-task1-process-band5",
+      "wordCount": 156,
+      "publishedOverall": 5,
+      "promptSha256": "49c1a07a24ac5a8be4ade6dc3c4429965a355768a0cf27d75f47b9b538bfcb8c",
+      "inputSha256": "d4c57b37fa642681f9385e547f1723f3dac1159c31da91a651b177f5fff7ca22",
+      "feedback": {
+        "overallBand": 5,
+        "summary": "This is a practice estimate; the response attempts to outline the brick-making process but provides only a partial overview with several linguistic and factual flaws. Coverage of stages is present but lacks a clear process overview and accurate sequencing, and there are multiple grammatical and lexical errors that impede accuracy. Overall, development is uneven and key features are not consistently explained or linked.",
+        "sample": false,
+        "criteria": [
+          {
+            "name": "Task Achievement",
+            "band": 5,
+            "explanation": "The answer includes several stages of the brick-making process and attempts a sequential description, but it fails to provide a clear, overall process overview and misses precise, logical sequencing and some key features. There is partial coverage of steps like shaping, drying, firing, cooling, and packaging, but the description is inconsistent and some data are misrepresented or unclear.",
+            "evidence": "Bricks are small shaped figures which are used for building."
+          },
+          {
+            "name": "Coherence and Cohesion",
+            "band": 5,
+            "explanation": "There is a basic progression with introductory connectors and sequence markers (First of all, Next, Finally), but the overall organisation is rudimentary and some links are awkward or unclear, which reduces clarity of the process flow.",
+            "evidence": "First of all digger dig the ground untill the clay level."
+          },
+          {
+            "name": "Lexical Resource",
+            "band": 5,
+            "explanation": "The essay uses some relevant vocabulary (drier, kiln, mould) but also contains imprecise phrasing and awkward collocations, with occasional invented terms and nonstandard word choices that obscure meaning.",
+            "evidence": "The sand gives the texture for bricks."
+          },
+          {
+            "name": "Grammatical Range and Accuracy",
+            "band": 4,
+            "explanation": "There are frequent grammatical and punctuation errors that hamper clarity, including article usage, verb forms, and misspellings, which occasionally impede meaning (e.g., incorrect verb forms and misspellings).",
+            "evidence": "untill the clay level."
+          }
+        ],
+        "strengths": [
+          "Provides a sequence of process steps (digging, shaping, drying, firing, cooling, packaging).",
+          "Uses some process-specific terms (kiln, mould, wire cutter).",
+          "Attempts to link stages with connectors (First of all, Next, Finally)."
+        ],
+        "improvements": [
+          "Improve overview: clearly state the overall process in one or two sentences before detailing stages.",
+          "Improve sequencing accuracy: ensure logical order and correct repetition (e.g., ensure drying before firing, correct temperature ranges and timings).",
+          "Enhance accuracy and specificity: use correct terms and measurements, avoid invented phrases; check grammar and subject-verb agreement.",
+          "Expand lexical range with precise verbs (extract, form, press, extrude) and cohesive devices to better connect steps.",
+          "Reduce errors: review common spelling and grammar (untill -> until, digger dig -> dig)."
+        ]
+      },
+      "exactEvidence": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "productionValid": true,
+      "overallDeviation": 0,
+      "criterionMinusPublishedOverall": [
+        0,
+        0,
+        0,
+        -1
+      ],
+      "commentRangeDistance": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "academic-task2-health-band7_5",
+      "wordCount": 375,
+      "publishedOverall": 7.5,
+      "promptSha256": "7c6818a1f01d00099f287159b45e15f1e35b13064752e5d7115efb62b2c9c7fe",
+      "inputSha256": "1b7102b7dbb19f909d2b5a4ca698ca50f7e9bfb02c07beae8e55b1d545d0b7bd",
+      "feedback": {
+        "overallBand": 6,
+        "summary": "This is a practice response with a clear opinion and relevant ideas, but development could be more balanced, examples more precise, and there are noticeable spelling/linguistic errors. The evidence quoted shows where the writer argues and where Language range is demonstrated or limited. It is an uncertain estimate due to limited data in a single essay sample and not all criteria are fully demonstrated.",
+        "sample": false,
+        "criteria": [
+          {
+            "name": "Task Response",
+            "band": 6,
+            "explanation": "The essay presents a clear position and offers reasons with some relevant examples, addressing the prompt. The conclusion restates the view, and there is a lengthier discussion of causes. However, the development is not always precise or balanced, and there could be more explicit linking of ideas to the claim that health will decline; the overview is implied rather than a distinct, well-structured overview of key points.",
+            "evidence": "In my opinion, I think that people will become unhealthier in the future than they are now."
+          },
+          {
+            "name": "Coherence and Cohesion",
+            "band": 6,
+            "explanation": "There is logical progression and some paragraphing with linking devices, but cohesion is sometimes mechanical and ideas could be organized more clearly with a stronger overview and topic sentences. Some paragraphing and transitions could be clearer to guide the reader.",
+            "evidence": "There are many reasons that support the idea of people becoming unhealthy in the future."
+          },
+          {
+            "name": "Lexical Resource",
+            "band": 6,
+            "explanation": "The essay uses a range of general vocabulary related to health and technology; there are instances of acceptable collocation and some topic-specific terms. However, there are some spelling errors and some informal or imprecise expressions that limit precision.",
+            "evidence": "they like to spend more time on the internet downloading new programmes or reading gossips about celebraties."
+          },
+          {
+            "name": "Grammatical Range and Accuracy",
+            "band": 5.5,
+            "explanation": "There are a mix of simple and some complex sentences, but there are noticeable errors and awkward phrasing that occasionally impede clarity. Spelling mistakes and some non-standard forms reduce accuracy.",
+            "evidence": "They like to spend more time on the internet downloading new programmes or reading gossips about celebraties."
+          }
+        ],
+        "strengths": [
+          "Clear position on whether health will be better or worse in the future.",
+          " ",
+          "],",
+          "improvements=[ "
+        ],
+        "improvements": [
+          "Develop a more explicit overview paragraph that outlines the main causes and counterpoints.",
+          "Improve accuracy and consistency in spelling and word form (for example, celebrities, programmes).",
+          "Strengthen task response by providing more precise, example-driven support and a clearer link between causes and the overall claim.",
+          "Enhance coherence with stronger topic sentences and transitions between ideas to improve logical progression.",
+          "Diversify vocabulary and reduce repetition of simple terms like 'health' and 'future' while maintaining clarity."
+        ]
+      },
+      "exactEvidence": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "productionValid": false,
+      "overallDeviation": -1.5,
+      "criterionMinusPublishedOverall": [
+        -1.5,
+        -1.5,
+        -1.5,
+        -2
+      ],
+      "commentRangeDistance": [
+        -1,
+        -1,
+        -1,
+        -1.5
+      ]
+    },
+    {
+      "id": "general-task1-letter-band5_5",
+      "wordCount": 140,
+      "publishedOverall": 5.5,
+      "promptSha256": "49c1a07a24ac5a8be4ade6dc3c4429965a355768a0cf27d75f47b9b538bfcb8c",
+      "inputSha256": "9a63a7103ade923e97d403634d49734f8b08be0ccf3b2edaf1ec66c7c04ac86d",
+      "feedback": {
+        "overallBand": 5,
+        "summary": "This is a practice response with insufficient length and uneven development. It addresses the task superficially, but fails to meet word count and develops ideas with limited range. The quotes show clear issues in cohesion and formal tone. Treat as uncertain evidence for a short-essay task.",
+        "sample": false,
+        "criteria": [
+          {
+            "name": "Task Achievement",
+            "band": 5,
+            "explanation": "The letter attempts to describe the situation, problems, and a preferred outcome (a single room), but coverage is limited in development, lacks sufficient detail and justification, and fails the 150-word minimum. The overview/goal is present but not thoroughly developed or supported with examples or implications.",
+            "evidence": "I am writing to express my dissatisfaction with my room-mate. As you know we share one room, I can not study in the room at all any more if I still stay there."
+          },
+          {
+            "name": "Coherence and Cohesion",
+            "band": 5,
+            "explanation": "There is a simple logical sequence and some linking between ideas, but paragraphing is inconsistent and transitions are minimal; greater cohesion across ideas and more explicit sequencing would improve flow.",
+            "evidence": "They make lots of noise and switch on the radio very loudly, for me this environment is very difficult to study and I need a quiet room."
+          },
+          {
+            "name": "Lexical Resource",
+            "band": 5,
+            "explanation": "Uses basic vocabulary with limited flexibility; some word choice is repetitive or imprecise (e.g., 'room-mate' and 'single room'); occasional attempts at more precise wording are present but not sustained.",
+            "evidence": "I am writing to express my dissatisfaction with my room-mate."
+          },
+          {
+            "name": "Grammatical Range and Accuracy",
+            "band": 5,
+            "explanation": "A mix of simple and some complex structures but with noticeable errors that may hinder clarity (e.g., inconsistency in punctuation, some awkward phrasing); errors do not completely obscure meaning but are frequent enough to impede smooth reading.",
+            "evidence": "As you know we share one room, I can not study in the room at all any more if I still stay there."
+          }
+        ],
+        "strengths": [
+          "Clear statement of the request (change to a single room).",
+          "Polite closing format (Dear Sir/Madam, ... Your faithfully)."
+        ],
+        "improvements": [
+          "Increase word count to meet the 150-word minimum and develop the justification for the change with more specifics (dates, duration, impact on study).",
+          "Use a more formal tone throughout and correct punctuation/spacing (room-mate vs roommate, comma usage).",
+          "Provide a clearer structure with separate paragraphs for situation, problems, and requested action; add a brief concluding sentence expressing anticipation of a resolution.",
+          "Include concrete details about preferred accommodation (location, type of room, any deadlines)."
+        ]
+      },
+      "exactEvidence": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "productionValid": true,
+      "overallDeviation": -0.5,
+      "criterionMinusPublishedOverall": [
+        -0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "commentRangeDistance": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "general-task2-care-band5",
+      "wordCount": 220,
+      "publishedOverall": 5,
+      "promptSha256": "7c6818a1f01d00099f287159b45e15f1e35b13064752e5d7115efb62b2c9c7fe",
+      "inputSha256": "c809ce0c37b2a402e06da05c3bdb214dfa83f845cc0a00e337a14cd7bcc2bda0",
+      "feedback": {
+        "overallBand": 4.5,
+        "summary": "This is a short practice response with only 220 words and several language issues. It attempts to address the task but coverage is underdeveloped and uneven, with weak development of arguments and limited examples. The evidence is scarce to support a clear position, and the answer lacks a strong overview and robust reasoning. The assessment reflects uncertainty about precise banding due to limited length and inconsistent language use; more development and language control are needed for reliable banding. Evidence of task coverage is present but shallow; coherence and range of language are limited by errors and repetition.",
+        "sample": false,
+        "criteria": [
+          {
+            "name": "Task Response",
+            "band": 4.5,
+            "explanation": "Addresses the topic and attempts to discuss who should pay, but development is limited, with few clear reasons, weak examples, and under-length coverage (≈220 words). The argument is unfocused at times and lacks a strong, explicit position or balanced consideration.",
+            "evidence": "If they could do they should do anything."
+          },
+          {
+            "name": "Coherence and Cohesion",
+            "band": 4.5,
+            "explanation": "Some attempt at organization (brief sections and basic connectors), but cohesion is weak due to abrupt transitions and repetitive ideas; paragraphing is inconsistent and there is limited use of connectors to show progression.",
+            "evidence": "In addition to company or Government."
+          },
+          {
+            "name": "Lexical Resource",
+            "band": 4,
+            "explanation": "Lexical range is limited with frequent simple words and some awkward or incorrect collocations; several phrases are repetitive or imprecise, reducing clarity and nuance.",
+            "evidence": "The old Peoples situation gets worse in the many countries."
+          },
+          {
+            "name": "Grammatical Range and Accuracy",
+            "band": 4,
+            "explanation": "Many grammar and word-choice errors are evident (pluralisation, articles, verb forms) that occasionally impede meaning; sentence variety is limited to simple structures with some attempts at more complex forms failing.",
+            "evidence": "It is true that the old Peoples situation gets worse in the many countries."
+          }
+        ],
+        "strengths": [
+          "Some relevance to the task and a clear basic stance.",
+          "Attempted use of examples and suggestions (e.g., social security).",
+          "Presence of a concluding idea that care should be provided."
+        ],
+        "improvements": [
+          "Increase word count toward at least 250-260 words to meet the task guideline.",
+          "Develop a clear position with well-expanded reasons and concrete examples.",
+          "Improve paragraphing: one clear introduction, body paragraphs with topic sentences, and a concise conclusion.",
+          "Enhance vocabulary for accuracy and precision (e.g., avoid generic terms; use collocations related to social care and funding).",
+          "Reduce grammar errors by focusing on subject-verb agreement, article use, and consistent tense.",
+          "Use linking phrases to improve logical progression between ideas and examples."
+        ]
+      },
+      "exactEvidence": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "productionValid": false,
+      "overallDeviation": -0.5,
+      "criterionMinusPublishedOverall": [
+        -0.5,
+        -0.5,
+        -1,
+        -1
+      ],
+      "commentRangeDistance": [
+        -0.5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "synthetic-off-topic",
+      "wordCount": 119,
+      "publishedOverall": null,
+      "promptSha256": "7c6818a1f01d00099f287159b45e15f1e35b13064752e5d7115efb62b2c9c7fe",
+      "inputSha256": "c7081964d57e60d148bf4029ede41a69f3fed4e7067de6240c4f69436a633ab1",
+      "feedback": {
+        "overallBand": 3.5,
+        "summary": "This is an uncertain practice estimate: the response does not address the required health-forecast task and is significantly under length. Evidence from the essay shows off-topic content and limited development. The following criteria scores reflect the mismatch and the brevity of the writing rather than only language quality.\n",
+        "sample": false,
+        "criteria": [
+          {
+            "name": "Task Response",
+            "band": 2.5,
+            "explanation": "The essay completely fails to address the given health-forecast question. There is no clear position, argument, or development related to whether health standards will be lower in the future. The content stays on a personal hobby topic with no task-related progression or overview.",
+            "evidence": "My favourite hobby is collecting old railway tickets."
+          },
+          {
+            "name": "Coherence and Cohesion",
+            "band": 3,
+            "explanation": "Some basic paragraphing and a simple flow exist, but there is no task-relevant progression or logical development toward answering the prompt. Links between ideas are minimal and mostly confined to the immediate topic of ticket collecting.",
+            "evidence": "Its curator showed me a collection arranged by destination rather than date."
+          },
+          {
+            "name": "Lexical Resource",
+            "band": 4,
+            "explanation": "A limited range of vocabulary is used with some appropriate phrasing for describing a hobby, but there is little flexibility or precision needed for IELTS Task 2. Repetition and simple descriptors dominate.",
+            "evidence": "collecting old railway tickets"
+          },
+          {
+            "name": "Grammatical Range and Accuracy",
+            "band": 4,
+            "explanation": "Sentence structures are mostly simple with occasional appropriate complex forms; inaccuracies do not impede basic meaning but the range and control are limited for a higher band.",
+            "evidence": "Although a ticket has little financial value, it can preserve an interesting piece of local history."
+          }
+        ],
+        "strengths": [
+          "Clear topic focus within the given paragraph(s) and a coherent basic structure.",
+          "Some descriptive sentences that convey a sense of hobby and collecting."
+        ],
+        "improvements": [
+          "Address the task directly: present a clear stance on whether health standards will be lower in the future and support it with explanations and examples.",
+          "Increase length to meet 250+ word requirement and develop ideas with relevant examples or data.",
+          "Use a wider range of vocabulary and more varied sentence structures to demonstrate lexical and grammatical flexibility.",
+          "Improve task-specific coherence: include a proper overview/position at the start and build a logically connected argument throughout the essay.",
+          "Avoid off-topic content by sticking to the given prompt and providing concrete reasons related to health trends."
+        ]
+      },
+      "exactEvidence": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "productionValid": true,
+      "overallDeviation": null,
+      "criterionMinusPublishedOverall": null,
+      "commentRangeDistance": null
+    },
+    {
+      "id": "synthetic-very-short",
+      "wordCount": 15,
+      "publishedOverall": null,
+      "promptSha256": "49c1a07a24ac5a8be4ade6dc3c4429965a355768a0cf27d75f47b9b538bfcb8c",
+      "inputSha256": "4fcd68681d5fa7ec80551d3df0a21c5b8f5d42ab11de04d30a41c20b4b81afb6",
+      "feedback": {
+        "overallBand": 1,
+        "summary": "This is an uncertain practice estimate due to extremely short answer (15 words) that provides minimal task fulfilment. Insufficient content to judge development or language range; more evidence required to assess bands reliably.",
+        "sample": false,
+        "criteria": [
+          {
+            "name": "Task Achievement",
+            "band": 1,
+            "explanation": "The letter is extremely brief and fails to describe the situation, problems in working, or preferred accommodation in any depth. It does not meet the requirement to explain and justify needs. Quote shows minimal content: my roommate makes noise.",
+            "evidence": "my roommate makes noise."
+          },
+          {
+            "name": "Coherence and Cohesion",
+            "band": 1,
+            "explanation": "There is almost no cohesive structure beyond a basic greeting and closing; the text lacks sequence, development, or logical flow typical of an organised letter. Quote shows basic phrasing without developed linkage: Dear Sir, my roommate makes noise.",
+            "evidence": "Dear Sir, my roommate makes noise."
+          },
+          {
+            "name": "Lexical Resource",
+            "band": 1,
+            "explanation": "Vocabulary is extremely limited (e.g., 'noise', 'quiet room') with no attempt at range or paraphrase. Quote demonstrates minimal lexical choice: quiet room",
+            "evidence": "quiet room."
+          },
+          {
+            "name": "Grammatical Range and Accuracy",
+            "band": 1,
+            "explanation": "Sentences are simple and punctuation minimal; there is no evidence of a range of structures or complex grammar. Quote illustrates basic sentence and punctuation: Dear Sir, my roommate makes noise.",
+            "evidence": "Dear Sir, my roommate makes noise."
+          }
+        ],
+        "strengths": [],
+        "improvements": [
+          "Expand to at least 150 words with a formal letter format (address, date, recipient) and a proper opening (Dear Sir or Madam) and closing (Yours sincerely).",
+          "Describe the situation in detail: who, what, when, where, how the problem affects study/work, and any prior attempts to resolve it.",
+          "Explain the problems clearly and provide concrete examples (e.g., noise type, times, impact on concentration, sleep).",
+          "State what kind of accommodation you would prefer and why, offering brief justification and potential compromises (e.g., single room, study-friendly area, quiet hours).",
+          "Organise the letter into clear paragraphs: introduction, description of problem, impact, requested solution, closing."
+        ]
+      },
+      "exactEvidence": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "productionValid": true,
+      "overallDeviation": null,
+      "criterionMinusPublishedOverall": null,
+      "commentRangeDistance": null
+    }
+  ],
+  "finalRemaining": 0
+}

@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/ielts-project-overview/"
+title = "IELTS Writing Practice — Project Overview"
+description = "A nine-slide overview of IELTS Writing Practice, covering learner features, AI feedback, scoring limits, privacy, cost safeguards, and publishing readiness."
+version = "1.0.0"
+id = "artifacts/ielts-project-overview"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/ielts-project-overview/" ]
+localPort = 22039
+
+[services.development]
+run = "pnpm --filter @workspace/ielts-project-overview run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ielts-project-overview", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ielts-project-overview/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22039"
+BASE_PATH = "/ielts-project-overview/"

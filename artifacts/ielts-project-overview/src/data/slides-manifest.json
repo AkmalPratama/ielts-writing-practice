@@ -1,0 +1,11 @@
+[
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f101","position":1,"filepath":"src/pages/slides/Overview.tsx","title":"IELTS Writing Practice","description":"A focused writing workspace with optional AI feedback.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f102","position":2,"filepath":"src/pages/slides/Coverage.tsx","title":"Practice coverage","description":"Modules, task types, and question generation.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f103","position":3,"filepath":"src/pages/slides/Workflow.tsx","title":"Learner workflow","description":"From task selection to optional feedback.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f104","position":4,"filepath":"src/pages/slides/Workspace.tsx","title":"Writing workspace","description":"Editor, autosave, timer, and sample feedback.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f105","position":5,"filepath":"src/pages/slides/Feedback.tsx","title":"AI feedback","description":"The four rubric criteria and supporting feedback.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f106","position":6,"filepath":"src/pages/slides/Scoring.tsx","title":"Scoring limits","description":"Practice estimates and validation limitations.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f107","position":7,"filepath":"src/pages/slides/Privacy.tsx","title":"Privacy boundaries","description":"Browser drafts, consent, and persistent storage.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f108","position":8,"filepath":"src/pages/slides/Safeguards.tsx","title":"AI cost safeguards","description":"Approved model and shared daily request limits.","speakerNotes":""},
+  {"id":"745c0b16-566a-4cd3-93f6-70c4b3d7f109","position":9,"filepath":"src/pages/slides/Readiness.tsx","title":"Publishing readiness","description":"Verified preparation and owner-controlled publishing.","speakerNotes":""}
+]

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "IELTS Writing Practice"
+description = "A focused IELTS writing workspace with original practice tasks, browser-saved drafts, timers, and rubric-based feedback with explicit AI cost safeguards."
+version = "1.0.0"
+id = "artifacts/ielts-writing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22879
+
+[services.development]
+run = "pnpm --filter @workspace/ielts-writing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ielts-writing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ielts-writing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22879"
+BASE_PATH = "/"
